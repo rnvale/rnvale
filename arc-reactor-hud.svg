@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Original Arc Reactor HUD</title>
+  <desc id="desc">A dark JARVIS-inspired control deck with a cyan arc reactor, gold core ring, and restrained red armor accents.</desc>
+  <defs>
+    <filter id="reactor-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <radialGradient id="core-light" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#E6EDF3" stop-opacity="0.95" />
+      <stop offset="0.28" stop-color="#00D9FF" stop-opacity="0.9" />
+      <stop offset="0.68" stop-color="#00D9FF" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#0B0E14" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="armor-gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#F2CC60" stop-opacity="0.25" />
+      <stop offset="0.5" stop-color="#F2CC60" />
+      <stop offset="1" stop-color="#F2CC60" stop-opacity="0.25" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="#0B0E14" />
+  <path d="M34 32H1166M34 288H1166M34 32V288M1166 32V288" stroke="#111823" stroke-width="2" />
+  <path d="M34 64H310M890 64H1166M34 256H310M890 256H1166" stroke="#00D9FF" stroke-opacity="0.35" />
+  <path d="M48 112H230M970 112H1152M48 208H230M970 208H1152" stroke="#8B949E" stroke-opacity="0.16" stroke-dasharray="4 10" />
+
+  <g font-family="JetBrains Mono, Consolas, monospace" letter-spacing="3">
+    <text x="64" y="82" font-size="16" fill="#00D9FF">JARVIS ONLINE</text>
+    <text x="64" y="108" font-size="12" fill="#8B949E">PROFILE SYSTEM / RAIN VALE</text>
+    <text x="936" y="82" font-size="16" fill="#F2CC60">MARK 85 PROTOCOL</text>
+    <text x="936" y="108" font-size="12" fill="#8B949E">STATUS: BUILDING IN PUBLIC</text>
+    <text x="64" y="250" font-size="11" fill="#8B949E">ARC REACTOR / CORE LINK ESTABLISHED</text>
+    <text x="936" y="250" font-size="11" fill="#8B949E">MISSION LOG / 02 ACTIVE PROJECTS</text>
+  </g>
+
+  <g transform="translate(600 160)" filter="url(#reactor-glow)">
+    <circle r="112" fill="#111823" stroke="#111823" stroke-width="18" />
+    <circle r="112" fill="none" stroke="#F85149" stroke-width="8" stroke-dasharray="52 24 18 36" transform="rotate(-18)" />
+    <circle r="96" fill="none" stroke="url(#armor-gold)" stroke-width="3" stroke-dasharray="120 28 44 18" transform="rotate(12)" />
+    <circle r="79" fill="none" stroke="#00D9FF" stroke-opacity="0.38" stroke-width="2" stroke-dasharray="4 12" />
+    <circle r="64" fill="url(#core-light)" />
+    <circle r="48" fill="#0B0E14" stroke="#00D9FF" stroke-width="3" />
+    <path d="M0-39L12-13L40 0L12 13L0 39L-12 13L-40 0L-12-13Z" fill="#E6EDF3" stroke="#00D9FF" stroke-width="3" />
+    <path d="M0-26L8-8L26 0L8 8L0 26L-8 8L-26 0L-8-8Z" fill="#00D9FF" />
+    <path d="M-126 0H-108M108 0H126M0-126V-108M0 108V126" stroke="#00D9FF" stroke-width="3" />
+  </g>
+
+  <g fill="#F85149">
+    <circle cx="52" cy="52" r="4" />
+    <circle cx="1148" cy="52" r="4" />
+  </g>
+  <g fill="#F2CC60">
+    <circle cx="52" cy="268" r="3" />
+    <circle cx="1148" cy="268" r="3" />
+  </g>
+</svg>
